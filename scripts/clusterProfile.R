@@ -45,5 +45,4 @@ dplot = dotplot(p)
 # Save 
 ggsave(paste(args[1], "/", "dotplot.png", sep=""), width=1200, height=2000,
        units = "px", plot = dplot)
-save(p, file = paste(args[1], "/", "enrichment_results.RData", sep = ""))
 save.image(file = paste(args[1], "/", "clusterProfiler.RData", sep = ""))
